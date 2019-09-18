@@ -4,9 +4,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 
-public class DFA extends FA {
+public class NFA extends FA{
 
-    public DFA(List<HashMap<Character, Integer>> data, Integer start, int[] end) {
+    public NFA(List<HashMap<Character, Integer>> data, Integer start, int[] end) {
         this.data = data;
         this.initState = start;
         for (int i : end) {

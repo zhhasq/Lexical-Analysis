@@ -1,8 +1,13 @@
 package edu.unm.lexer.fa;
 
 public class FAUtils {
-    //for question 1
+    //for question 1 see REParser
     //for question 2
+    public static DFA NFAToDFA(NFA nfa) {
+
+    }
+
+
     //for question 3
     //for question 4
 
