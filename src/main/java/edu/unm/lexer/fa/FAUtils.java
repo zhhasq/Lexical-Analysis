@@ -1,5 +1,7 @@
 package edu.unm.lexer.fa;
 
+import edu.unm.lexer.regexps.RE;
+
 public class FAUtils {
     //for question 1 see REParser
     //for question 2
@@ -9,7 +11,13 @@ public class FAUtils {
 
 
     //for question 3
+    public static RE DFAToRE(DFA dfa) {
+        //todo Farhan
+    }
     //for question 4
+    public static DFA miniDFA(DFA dfa) {
+        //todo Farhan
+    }
 
     //for question 5
     public static boolean testDFA(DFA dfa, String input) {
