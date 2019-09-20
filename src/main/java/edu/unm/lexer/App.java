@@ -47,7 +47,10 @@ public class App
         System.out.println(r5.toStringReverse());
 
         NFA r6 = FAFactory.makeNFAStar(r);
+        NFA r7 = r6.copyNFA();
         r6.generateID();
+        r7.generateID();
+
         //System.out.println(r6.toString());
       //  System.out.println(r6.toStringReverse());
 

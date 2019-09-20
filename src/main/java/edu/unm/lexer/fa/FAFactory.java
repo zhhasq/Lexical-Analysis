@@ -85,6 +85,8 @@ public class FAFactory {
         } else {
             nextList.add(initial);
         }
+        accept.prev.put("", Arrays.asList(new State[]{initial}));
+
         List<State> newData = new ArrayList<>();
         newData.add(initial);
         newData.addAll(nfa.data);
