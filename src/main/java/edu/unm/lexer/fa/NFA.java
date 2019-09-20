@@ -6,11 +6,14 @@ import java.util.List;
 
 public class NFA extends FA{
 
-    public NFA(List<HashMap<Character, Integer>> data, Integer start, int[] end) {
+    public NFA(List<State> data, State start, State end) {
         this.data = data;
         this.initState = start;
-        for (int i : end) {
-            this.acceptState.add(i);
-        }
+        this.acceptState = end;
+    }
+
+    @Override
+    public State mov(State curState, String c) {
+        return null;
     }
 }

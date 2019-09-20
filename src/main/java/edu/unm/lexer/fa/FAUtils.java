@@ -5,32 +5,34 @@ import edu.unm.lexer.regexps.RE;
 public class FAUtils {
     //for question 1 see REParser
     //for question 2
-    public static DFA NFAToDFA(NFA nfa) {
-
-    }
-
-
-    //for question 3
-    public static RE DFAToRE(DFA dfa) {
-        //todo Farhan
-    }
-    //for question 4
-    public static DFA miniDFA(DFA dfa) {
-        //todo Farhan
-    }
+//    public static DFA NFAToDFA(NFA nfa) {
+//
+//    }
+//
+//
+//    //for question 3
+//    public static RE DFAToRE(DFA dfa) {
+//        //todo Farhan
+//    }
+//    //for question 4
+//    public static DFA miniDFA(DFA dfa) {
+//        //todo Farhan
+//    }
 
     //for question 5
     public static boolean testDFA(DFA dfa, String input) {
-        Integer curState = 0;
+
+        State start = dfa.getInitState();
+        State cur = start;
         char[] inputArr = input.toCharArray();
         for (char c : inputArr) {
-            curState = dfa.mov(curState, c);
-            if (curState == null) {
+            cur = dfa.mov(cur, new String(new char[]{c}));
+            if (cur == null) {
                 //no where to go
                 return false;
             }
         }
-        return dfa.isAccpeted(curState);
+        return dfa.isAccpeted(cur);
     }
 
     //for question 6
