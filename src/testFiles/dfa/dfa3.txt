@@ -1,0 +1,14 @@
+dfa
+states
+1
+2
+end
+initial
+1
+accept
+1
+end
+transitions
+1 'a --> 2
+2 'a --> 1
+end

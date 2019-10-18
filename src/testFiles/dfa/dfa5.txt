@@ -1,0 +1,14 @@
+dfa
+states
+s#
+s2
+end
+initial
+s#
+accept
+s2
+end
+transitions
+s# 'a  --> s2
+s# 'b --> s2
+end

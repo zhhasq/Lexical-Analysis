@@ -1,0 +1,18 @@
+dfa
+states
+s1
+s2
+end
+initial
+s1
+accept
+s2
+end
+transitions
+s1 '  --> s2
+s1 '+ --> s2
+s2 '*  --> s2
+s2 '' --> s2
+s1 '| --> s1
+s1 ''_ --> s2
+end
